@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - dev
+  pull_request:
+    branches:
+      - dev
+  release:
+    types: # This configuration does not affect the page_build event above
+      - created
 jobs:
   Run_tests:
     name: Run unit test

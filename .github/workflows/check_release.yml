@@ -25,9 +25,8 @@ jobs:
       run: npm run es-lint
     - name: Run unit test
       run: npm test
-    - name: Build lib/esm umd
-      run: npm run build:esm
-           npm run build:umd_prod
+    - name: Build dist/esm
+      run: npm run build
     - name: Trigger run upload release workflows
       uses: peter-evans/repository-dispatch@v1
       with:

@@ -34,6 +34,8 @@ const Attachment = (props: AttachmentProps) => {
     if (props.onFileRemove && props.files) {
       const files = [...props.files];
       files.splice(index, 1);
+      console.log("e");
+      
       props.onFileRemove(files);
     }
   };

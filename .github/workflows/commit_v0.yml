@@ -1,9 +1,11 @@
 name: On commit workflow
 on:
-  release:
-    types: [created]
+  push:
     branches:
       - dev
+    tags:
+      - v1.*
+      - v1.*.*
 jobs:
   Run_tests:
     name: Run unit test

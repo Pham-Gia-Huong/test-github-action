@@ -1,17 +1,18 @@
-const {exec, execSync} = require('child_process')
-const fs = require('fs');
-const core = require('@actions/core');
+const { exec, execSync } = require("child_process");
+const fs = require("fs");
+const core = require("@actions/core");
 
-execSync('git fetch --tags')
-exec('git tag | tail -1 ', (err, stdout) => {
+execSync("git fetch --tags");
+exec("git tag | tail -1 ", (err, stdout) => {
+  console.log("stdout", stdout);
   if (err) {
     throw err;
   }
   const version = stdout.slice(1);
-  const packageFile = fs.readFileSync('package.json');
+  const packageFile = fs.readFileSync("package.json");
   const packageJson = JSON.parse(packageFile);
-  if ((packageJson.version).trim() !== (version).trim()) {
-    throw new Error('version is not match');
+  if (packageJson.version.trim() !== version.trim()) {
+    throw new Error("version is not match");
   }
-  core.setOutput('version', version.trim());
+  core.setOutput("version", version.trim());
 });

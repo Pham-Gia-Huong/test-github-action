@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - dev
-    tags:
-      - v1.*
-      - v1.*.*
 jobs:
   Run_tests:
     name: Run unit test

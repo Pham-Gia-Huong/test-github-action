@@ -22,7 +22,7 @@ jobs:
       id: check_version
       uses: ./.github/actions/check_version
     - name: Run ESLint
-      run: npm run es-lint
+      run: npm run lint
     - name: Run unit test
       run: npm test
     - name: Build lib/esm umd

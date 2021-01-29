@@ -8,7 +8,7 @@ exec('git tag | tail -1 ', (err, stdout) => {
     throw err;
   }
   const version = stdout.slice(1);
-  console.log('stdout',version);
+  console.log('stdout',stdout);
 
   const packageFile = fs.readFileSync('package.json');
      console.log('packageFile',packageFile);

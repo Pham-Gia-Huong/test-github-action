@@ -3,6 +3,7 @@
   "version": "0.7.9",
   "description": "",
   "scripts": {
+    "build": "npm run build:esm && npm run build:umd_prod",
     "build:umd_dev": "webpack --mode development",
     "build:umd_prod": "webpack --mode production",
     "build:esm": "tsc -p tsconfig.esm.json",

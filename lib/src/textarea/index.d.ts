@@ -1,0 +1,40 @@
+import { LitElement } from "lit-element";
+declare type TextAreaProps = {
+    className?: string;
+    error?: string;
+    id?: string;
+    label?: string;
+    placeholder?: string;
+    value?: string;
+    disabled?: boolean;
+    requiredIcon?: boolean;
+    visible?: boolean;
+};
+export declare class TextArea extends LitElement {
+    error: string;
+    label: string;
+    placeholder: string;
+    value: string;
+    disabled: boolean;
+    requiredIcon: boolean;
+    visible: boolean;
+    private _GUID;
+    private _onResize;
+    private _label;
+    private _textarea;
+    constructor(props?: TextAreaProps);
+    private _generateGUID;
+    private _updateVisible;
+    private _handleFocusTextarea;
+    private _handleChangeTextarea;
+    private _handleResizeMouseDown;
+    private _handleResizeMouseUp;
+    private _handleResizeMouseMove;
+    private _dispatchCustomEvent;
+    createRenderRoot(): this;
+    render(): any;
+    private _getResizerButtonSvgTemplate;
+    firstUpdated(): void;
+    private _getStyleTagTemplate;
+}
+export {};

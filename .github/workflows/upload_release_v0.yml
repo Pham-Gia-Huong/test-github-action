@@ -12,6 +12,8 @@ jobs:
     #   if: github.event.client_payload.status != 'success'
     #   run: exit 1
     - uses: actions/checkout@main
+      with:
+        ref: v0_dev
     - name: Remove package-lock
       run: rm -rf package-lock.json
     - name: Install dependencies

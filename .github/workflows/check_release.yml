@@ -31,7 +31,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{secrets.WORKFLOW_TOKEN}}
-        event-type: release_dispatch
+        event-type: release_dispatch-2
     # Use this to run flow auto test
     # - name: Trigger run automation test
     #   uses: peter-evans/repository-dispatch@v1

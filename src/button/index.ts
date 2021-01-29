@@ -63,7 +63,9 @@ export class Button extends LitElement {
     ) {
       return this.type;
     }
+    console.log("button");
     return "normal";
+    
   }
 
   render() {

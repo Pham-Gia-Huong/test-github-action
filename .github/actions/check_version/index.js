@@ -4,7 +4,7 @@ const core = require("@actions/core");
 
 execSync("git fetch --tags");
 exec("git tag | tail -1 ", (err, stdout) => {
-  console.log("stdout", stdout);
+  console.log("main stdout", stdout);
   if (err) {
     throw err;
   }

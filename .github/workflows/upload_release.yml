@@ -26,7 +26,7 @@ jobs:
       id: generate_binary
       uses: ./.github/actions/generate_binary_file
     - name: Upload integrity artifact
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       with:
         name: my-integrity
         path: ./${{ steps.generate_binary.outputs.integrity }}
@@ -37,7 +37,7 @@ jobs:
       run: |
           git add ./package-lock.json
           git commit -m "update package-lock.json after release"
-          git push origin :refs/tags/refs/heads/master
+          git push origin :refs/tags/refs/heads/main
     - name: Upload package to release[binaries]
       uses: svenstaro/upload-release-action@v1-release
       with:

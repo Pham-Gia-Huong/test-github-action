@@ -7,7 +7,7 @@ jobs:
     name: Run unit test
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@main
     - name: Remove package-lock
       run: rm -rf package-lock.json
     - name: Install dependencies

@@ -9,7 +9,7 @@
     "build:storybook": "build-storybook -o ./docs/storybook/",
     "storybook": "start-storybook",
     "test": "rm -rf ./test && tsc -p tsconfig.test.json && karma start --coverage",
-    "es-lint": "node_modules/.bin/eslint src/**/**.ts src/**.ts src/**/**.js"
+    "lint": "node_modules/.bin/eslint src/**/**.ts src/**.ts src/**/**.js"
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

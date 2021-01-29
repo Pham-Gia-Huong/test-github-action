@@ -1,7 +1,7 @@
 name: Upload For Release CI
 on:
   repository_dispatch:
-     types: release_dispatch-2
+     types: release_dispatch-v0
 jobs:
   On_upload:
     name: Upload integrity and package to release

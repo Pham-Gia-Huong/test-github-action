@@ -1,23 +1,21 @@
 {
-  "name": "@kintone/ui-component",
+  "name": "kintone-ui-component",
   "version": "0.7.9",
   "description": "",
   "scripts": {
-    "build": "npm run build:esm && npm run build:umd_prod",
     "build:umd_dev": "webpack --mode development",
     "build:umd_prod": "webpack --mode production",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:storybook": "build-storybook -o ./docs/storybook/",
     "storybook": "start-storybook",
     "test": "rm -rf ./test && tsc -p tsconfig.test.json && karma start --coverage",
-    "lint": "node_modules/.bin/eslint src/**/**.ts src/**.ts src/**/**.js"
+    "es-lint": "node_modules/.bin/eslint src/**/**.ts src/**.ts src/**/**.js"
   },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "module": "./lib/index.js",
   "keywords": [
-    "kintone",
-    "web components"
+    "kintone"
   ],
   "author": {
     "name": "Cybozu, Inc.",
@@ -27,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.8.7",
-    "@cybozu/eslint-config": "^10.0.1",
+    "@cybozu/eslint-config": "^11.0.3",
     "@open-wc/testing": "^2.5.17",
     "@open-wc/testing-karma": "^3.4.2",
     "@storybook/addon-a11y": "^6.0.20",
@@ -35,7 +33,7 @@
     "@storybook/web-components": "^6.0.20",
     "babel-loader": "^8.1.0",
     "deepmerge": "^4.2.2",
-    "eslint": "^6.8.0",
+    "eslint": "^7.18.0",
     "karma": "^5.0.9",
     "karma-coverage": "^2.0.2",
     "prettier": "^1.19.1",

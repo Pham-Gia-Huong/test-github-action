@@ -8,14 +8,7 @@ describe("Render successfully without props", () => {
     const tagname = (await el).tagName;
     expect(tagname.toLowerCase()).to.be.equal("kuc-dropdown");
     expect(el).dom.to.equalSnapshot({
-      ignoreAttributes: [
-        "aria-describedby",
-        "aria-labelledby",
-        "id",
-        "aria-live",
-        "type",
-        "style"
-      ]
+      ignoreAttributes: ["aria-describedby", "aria-labelledby", "id", "aria-live", "type", "style"]
     });
   });
 });

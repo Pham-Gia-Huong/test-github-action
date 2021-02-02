@@ -8,13 +8,7 @@ describe("Render successfully without props", () => {
     const tagname = (await el).tagName;
     expect(tagname.toLowerCase()).to.be.equal("kuc-multi-choice");
     expect(el).dom.to.equalSnapshot({
-      ignoreAttributes: [
-        "aria-describedby",
-        "aria-labelledby",
-        "id",
-        "style",
-        "aria-live"
-      ]
+      ignoreAttributes: ["aria-describedby", "aria-labelledby", "id", "style", "aria-live"]
     });
   });
 });
@@ -55,14 +49,7 @@ describe("Render successfully full props", () => {
   it('Render successfully full props"', async () => {
     const el = await fixture(container);
     expect(el).dom.to.equalSnapshot({
-      ignoreAttributes: [
-        "aria-describedby",
-        "aria-labelledby",
-        "id",
-        "style",
-        "role",
-        "aria-live"
-      ]
+      ignoreAttributes: ["aria-describedby", "aria-labelledby", "id", "style", "role", "aria-live"]
     });
   });
 });

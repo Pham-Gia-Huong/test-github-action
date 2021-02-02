@@ -174,7 +174,7 @@ describe("throw error when default props", () => {
     try {
       await fixture(container);
     } catch (error) {
-      console.log("error.message", error.message);
+      console.log("error.message", error.message)
       expect(error.message).to.equal("'items' property is not array");
     }
   });
@@ -211,7 +211,7 @@ describe("throw error when item set by props", () => {
     try {
       await fixture(container);
     } catch (error) {
-      console.log("error.message", error.message);
+      console.log("error.message", error.message)
       expect(error.message).to.equal("'items' property is not array");
     }
   });

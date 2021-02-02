@@ -154,9 +154,7 @@ describe("throw error when set by constructor", () => {
     try {
       await fixture(container);
     } catch (error) {
-      expect(error.message).to.equal(
-        "'value[1]' is duplicated! You can specify unique one."
-      );
+      expect(error.message).to.equal("'value[1]' is duplicated! You can specify unique one.");
     }
   });
 });
@@ -212,9 +210,7 @@ describe("throw error when set by prop", () => {
     try {
       await fixture(container);
     } catch (error) {
-      expect(error.message).to.equal(
-        "'value[1]' is duplicated! You can specify unique one."
-      );
+      expect(error.message).to.equal("'value[1]' is duplicated! You can specify unique one.");
     }
   });
 });

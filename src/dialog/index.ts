@@ -21,7 +21,6 @@ export class Dialog extends LitElement {
   private _triggeredElement: Element | null = null;
 
   constructor(props?: DialogProps) {
-    console.log("aaa");
     super();
 
     if (!props) {

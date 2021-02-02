@@ -1,6 +1,6 @@
 {
   "name": "kintone-ui-component",
-  "version": "0.7.9",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "build:umd_dev": "webpack --mode development",
